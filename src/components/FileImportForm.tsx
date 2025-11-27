@@ -46,6 +46,7 @@ export function FileImportForm({ onSubmit, isLoading }: FileImportFormProps) {
         chassi: String(row[3] || ""),
         cliente: String(row[4] || ""),
         valor: String(row[5] || ""),
+        tecnico: String(row[6] || ""),
       })).filter((record) => FIELD_ORDER.some((field) => record[field].trim() !== ""));
 
       if (records.length > 0) {
