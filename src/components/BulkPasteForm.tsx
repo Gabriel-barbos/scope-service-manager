@@ -19,7 +19,7 @@ export function BulkPasteForm({ onSubmit, isLoading }: BulkPasteFormProps) {
 
     for (const line of lines) {
       const values = line.split("\t");
-      if (values.length >= 6) {
+      if (values.length >= 7) {
         records.push({
           data: values[0]?.trim() || "",
           tipo: values[1]?.trim() || "",
@@ -27,6 +27,7 @@ export function BulkPasteForm({ onSubmit, isLoading }: BulkPasteFormProps) {
           chassi: values[3]?.trim() || "",
           cliente: values[4]?.trim() || "",
           valor: values[5]?.trim() || "",
+          tecnico: values[6]?.trim() || "",
         });
       }
     }
@@ -65,7 +66,7 @@ export function BulkPasteForm({ onSubmit, isLoading }: BulkPasteFormProps) {
             <Textarea
               value={pasteData}
               onChange={(e) => setPasteData(e.target.value)}
-              placeholder={`Cole aqui os dados do Excel no formato:\nData\tTipo\tPlaca\tChassi\tCliente\tValor`}
+              placeholder={`Cole aqui os dados do Excel no formato:\nData\tTipo\tPlaca\tChassi\tCliente\tValor\tTécnico/Empresa`}
               className="min-h-[150px] font-mono text-sm"
             />
             {pasteData && (
