@@ -13,7 +13,7 @@ export function Header() {
               Registro de Serviços
             </h1>
             <p className="text-muted-foreground">
-              Cadastre serviços e envie automaticamente para Google Sheets
+              Registe aqui seus serviços prestados 
             </p>
           </div>
         </div>
