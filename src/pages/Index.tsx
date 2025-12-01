@@ -7,8 +7,7 @@ import { ServiceRecord } from "@/types/service";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const FIXED_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwrV-JZf0PMqyBD74KVCTAEi3EvxcL47O0q7JNxzCD7g9QkHzdB1iVmteQFZE20lU-iVA/exec";
-
+const FIXED_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycby4TxFTSQoga79Oi8XMAIKiru5cxtMIveHxkJguQES_3QFGGdlHO3fhQZJr1TD7Byoz9g/exec"
 const Index = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();

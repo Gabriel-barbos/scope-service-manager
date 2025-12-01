@@ -19,6 +19,8 @@ const emptyRecord: ServiceRecord = {
   cliente: "",
   valor: "",
   tecnico: "",
+  email: "",
+  telefone: "",
 };
 
 export function ServiceForm({ onSubmit, isLoading }: ServiceFormProps) {

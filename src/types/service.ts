@@ -6,6 +6,8 @@ export interface ServiceRecord {
   cliente: string;
   valor: string;
   tecnico: string;
+  email: string;
+  telefone: string;
 }
 
 export const FIELD_LABELS: Record<keyof ServiceRecord, string> = {
@@ -16,6 +18,8 @@ export const FIELD_LABELS: Record<keyof ServiceRecord, string> = {
   cliente: "Cliente",
   valor: "Valor",
   tecnico: "Nome Técnico/Empresa",
+  email: "E-mail",
+  telefone: "Telefone",
 };
 
 export const FIELD_ORDER: (keyof ServiceRecord)[] = [
@@ -26,4 +30,6 @@ export const FIELD_ORDER: (keyof ServiceRecord)[] = [
   "cliente",
   "valor",
   "tecnico",
+  "email",
+  "telefone",
 ];
